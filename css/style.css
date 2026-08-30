@@ -858,7 +858,7 @@ top:0;
 
     /* ===== تجاوب ===== */
     @media (max-width: 600px) {
-      .container { padding: 10px 10px; }
+      .container { padding: 10px 10px; height: 60px;  }
       .header h1 { font-size: 2rem; }
       .stats { gap: 18px; }
       .stat-item .number { font-size: 1.8rem; }
