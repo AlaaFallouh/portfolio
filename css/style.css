@@ -883,3 +883,32 @@ top:0;
   background: #c53030;
   transform: scale(1.03);
 }
+.btn-watsapp {
+    position: fixed;
+    bottom: 30px;
+    left:30px;
+    background-color:#25d266;
+    color:white;
+    border-radius: 50%;
+width: 60px;
+height:60px;
+/* align-items: center;
+text-align: center; */
+display:flex;
+justify-content: center;
+align-items: center;
+transition: 0.3s;
+box-shadow: 0 0 3px #eee;
+font-size: 35px;
+z-index: 150;
+}
+.btn-watsapp:hover {
+    scale: 1.1;
+}
+footer .mem {
+    align-items: center;
+    padding-bottom: 50px;
+    text-align: center;
+      color:var(--main-txt-color);
+}
+
