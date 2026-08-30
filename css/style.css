@@ -1,0 +1,885 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+/* تصفير القيم الافتراضية */
+
+   /* ===== إعادة تعيين عامة ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+/* تحديد المتغيرات  */
+:root {
+/* لون ارضية الترويسة  */
+--header-bg-color:white;
+
+/* لون العنوان لرئيسي */
+/* --main-title-txt-color:rgb(2, 11, 80); */
+--main-title-txt-color:#05558e;
+/* لون العنوان الفرعي */
+/* --sub-title-txt-color:rgb(3, 15, 104); */
+--sub-title-txt-color:#04395f;
+    /* لون خط عمومي  */
+--main-txt-color:rgb(21, 31, 107);
+--main-txt-color:#114469;
+/* لون خط الفقرات */
+--paragraph-txt-color:rgb(14, 23, 88);
+
+/* --main-list-bg-color: #B4C7E7; */
+
+/* لون خلفية القوائم  */
+--main-list-bg-color: rgb(201, 201, 222) ;
+/* لون خط القوائم */
+--main-list-txt-color: #303131;
+/* خلفية القائمة هوفر */
+--main-list-bg-color-hover:#B4C7E7 ;
+/* لون خط القوائم هوفر */
+--main-list-txt-color-hover:rgb(29, 27, 62) ;
+
+/* --main-list-txt-color: rgb(175, 175, 199) ; */
+
+
+/*h1 حجم الخط  */
+--main-adress-h1-font-size: 40px;
+/* ارضية الايقونات */
+--main-icon-bg-color:rgb(21, 21, 170);
+/* ارضية الايقونات هوفر */
+--main-icon-bg-color-hover:rgba(0, 0, 0, 0.441);
+/*h2 حجم فونت  */
+--sec-adress-h2-font-size:25px;
+/* h3 حجم فونت  */
+--third-adress-h3-font-size: 22px;
+/* h4 حجم فونت  */
+--third-adress-h4-font-size: 19px;
+/* h5 حجم فونت  */
+--third-adress-h5-font-size: 16px;
+
+/* حجم خط الفقرات  */
+--paragraph-font-size :19px;
+/* زمن تأخير */
+--main-tr-tim:0.5;
+
+/* ارضية الجسم */
+--main-back-ground-color:#eae6e6;
+/* لون الاطار */
+--main-border-color:3px solid  blue;
+/* لون ارضية الزر */
+--main-btn-bk-color: #1a0565;
+--main-btn-bk-color: #7098C4;
+
+/* لون ارضية الزر هوفر*/
+--main-btn-bk-color-hover: #666666a0 ;
+/* لون خط الزر */
+--main-btn-txt-coloe:rgb(11, 13, 36);
+/* لون ارضية مقطع الكورس الواحد */
+--main-cource-bg-color: rgb(238, 191, 115);
+/* --لون ارضية الكورسات */
+--main-courses-bg-color:  rgba(244, 227, 176, 0.624);
+/* لون خط مقطع الكورس */
+--main-cources-font-color:rgb(107, 106, 106);
+/* حجم التفاف موحد */
+--main-b-radius: 5px;
+/* حجم مارجن موحد */
+--main-margin-size:5px;
+/* حجم بادن موحد */
+--main-padding-size:5px;
+/* بادن يمين يسار موحد */
+--min-padding-left-right:15px;
+
+--family-font-cairo:'Cairo';
+--family-font-Almarai:'Almarai';
+--family-font-Tajawal:'Tajawal';
+--MPageName:صفحة المهندس علاء وصيف فلوح
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* ==========تنظيم عرض الكونتينير حسب ستاندرالشاشات الافتراضي===================================== */
+/* شاشات الموبايل */
+/* // Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) { 
+    .main-header .container {
+        /* background-color: green;
+        width: calc(50% - 30px); */
+        top:0;
+        width:100%;
+         height: 60Px;
+    }
+
+   }
+/* شاشات التاب */
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:991px) { 
+    .main-header .container {
+        /* background-color: blue;
+         width: calc(33.3% - 30px); */
+         width: 750px;
+          height: 60Px;
+              top:0; 
+    }
+
+ }
+/* شاشات الكمبيوتر */
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1199px){ 
+     .main-header .container {
+        /* background-color: rgb(199, 171, 15);
+         width: calc(25% - 30px); */
+         width: 970px;
+          height: 60Px;
+    }
+
+ }
+ /* الشاشات الكبيرة  */
+/*// X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+   .main-header .container {
+        /* background-color: rgb(82, 92, 182);
+         width: calc(20% - 30px); */
+         width: 1170px; 
+         height: 60Px;
+    }
+
+ }
+img {
+max-width:100%;
+height: auto;
+}
+/* ============================start header style ============================================================= */
+/* -------------------تنسيق الترويسة ---------------------------------------------------------------------------*/
+
+.main-header{
+    z-index: 1000 ;
+   /* تثبيت الترويسة لتنزلق تحتها الصفحات مرتبط مع top */
+    
+    /* l;hk jefdj hgjv,dsm  */
+    top:0;
+    /* الارتفاع */
+    height: 60px;
+    /* الارضية */
+    background-color:var(--header-bg-color);
+    /* اطار سفلي */
+    border-bottom: 2px solid rgb(156, 154, 154);
+    position: sticky !important;
+}
+/* -------------------تنسيق عناصر الترويسة ------------------------------------- */
+.header-flex {
+    /* ترتيب العناصر افقياً */
+    display: flex; 
+    /* توزيع المسافات بين العناصر */
+    justify-content: space-between;
+    /* ضبط العناصر في الزسط عموديا  */
+    align-items: start;
+    /* تحديد الاب relative */
+    position: relative;
+    /* الرتفاع الترويسة  */
+    height: 60px;
+    margin-bottom: 5px;   
+    margin-top: 5px;
+    width:100%;
+}
+
+/* -----     تنسيق بار التنقل  قائمةالترويسة */
+ .nav-links-head  {
+    /* اخذ كامل الحجم والمحاذاة يمين  */
+    flex: 1;
+    /* ترتيب العناصر افقي */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color:black ; */
+}
+/* header .container nav ul {
+    display: flex;
+} */
+/* -----ضبط القائمة للشاشات الصغيرة  */
+@media (max-width: 768px) {
+    /* ضبط القائمة الى اليسار */
+.nav-links-head  {
+        /* ضبط عناصر الناف افقياً */
+       display: flex;
+        justify-content: end;
+    }
+    
+}
+/*--- ضبط الايقونة - */
+.header-flex img {
+    /* ضبط عرض الايقونة  */
+    width: 60px;
+    margin-top: 1px;
+   
+}
+/* logo style */
+.div-logo {
+      width:10%;
+    align-items: center;
+    justify-items: right;
+    right: 0;
+    margin-bottom: 7px;
+    padding-right: 0;
+  
+    
+}
+/* img logo style */
+.imglogo {
+   
+    background-color: none;
+    text-decoration: none;
+     border-radius: 50%;
+     
+     
+     padding-top: 10px;
+   
+     padding-bottom: 6px;
+   
+   
+   
+}
+.logop {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 900;
+    text-align: right;
+      padding-right: 20px;
+
+}
+.logop2 {
+      padding-right: 0;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 900;
+    text-align: right;
+}
+/* ----------------------------------------تنسيق لقائمة  */
+/* تنسيق القائمة في nav في container */
+.container .header-flex  .nav-links-head ul {
+    /* تحويل القائمة من عمودي الى سطر  */
+display:flex ;
+padding-bottom: 2px;
+font-size: 15px;
+margin-bottom: 2px;
+}
+/* اخفاء القائمة للشاشات الصغيرة  */
+@media (max-width: 768px) {
+.container .header-flex  .nav-links-head ul {
+        /* اخفاء القائمة عند عرض اقل من 768 بكسل  */
+        display: none;
+    }
+
+}
+/* header .container .nav .nav-tog {
+
+    background-color: black;
+    border:1px solid black;
+    border-radius: 50%;
+    border-color: black;
+} */
+
+@media (min-width: 768px) {
+    .container .header-flex  .nav-links-head .nav-tog {
+    
+        /* اخفاء ايقونات التواصل  تحت عرض 768  */
+        display: none;
+
+    }
+
+}
+.nav-links {
+    z-index:2;
+}
+/* ------------------تنسيق القائمة العلوية عند الاقتراب---------- */
+ .container .header-flex  .nav-links-head .nav-tog:hover +ul {
+ 
+
+ }
+ .nav-links-head{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction:row;
+  height: 300px;
+  /* justify-content: space-between; */
+  align-items: start;
+
+ }
+ /* تنسيق عنصر جافا المتولد عند ضغط القائمة  */
+ .mobile-nav1 {       /* اظهار القائمة افقياً */
+display: flex !important;
+/* اظهار القائمة عموديا  */
+flex-direction: column;
+/* للتحكم في موقع القائمة  */
+position: absolute;
+/* محاذات القائمة فوق ويسار */
+height: auto ;
+line-height: 1;
+right: 0;
+top: 60px;
+margin-top : 60x;
+/* تغيير لون القائمة  */
+background-color: var(--main-list-bg-color);
+ color: var(--main-list-txt-color);
+/*color:white; */
+/* تغيير عرض القائمة  */
+width: 35%;
+/* width:25%; */
+transition: var(--main-tr-tim);
+ }
+
+ /* @media(min-width:768px){
+    .mobile-nav1 {
+        display: none !important;
+    }
+
+
+
+/*-  تنسيق عناصر القائمة العلوية*/
+.main-header .container .header-flex .nav-links-head ul li a {
+    /* ازالة الخط من تحت كلمة عنصر القائمة  */
+    text-decoration: none;
+    /* اظهار عنصر القائمة كبلوك من اجل تحديد الطول والعرض .. */
+    display: block;
+    /* زيادة المسافة بين العناصر عن طريق البادينغ  */
+    /*  الرقم الايسر فوق وتحت 20 بكسل  */
+    /* والرقم الايمن  يمين ويسار10بكسل */
+    padding: 20px 10px ;
+    /* حجم خط القائمة  */
+    font-size: 18px;
+    /* تغميق لون الخط */
+    font-weight: 800;
+    /* اللون لون خط القائمة */
+    color: var(--main-list-txt-color);
+    /* لون ارضية القائمة  */
+    /* background-color:var(--main-list-bg-color); */
+    /* الحركة الافتراضية للموقع */
+   transition: var(--main-tr-tim);
+}
+/* ---وضع خط تحت عناصر القائمة العلوية للشاشات الصغيرة- */
+@media (max-width: 768px) {
+    .header-flex .container .nav-links-head  ul li a {
+        border-bottom: 1px solid #bbb;
+        color: var(--main-list-txt-color-hover)
+      }
+}
+/*  */
+.main-header .container .header-flex  .nav-links-head  ul li a:active , 
+.main-header .container .header-flex  .nav-links-head  ul li a:hover {
+    /* تعديل شكل عنصر القائمة وعناصر التواصل عند التحديد وعند الاقتراب  */
+ color: var(--main-list-txt-color-hover);
+ background-color: var(--main-list-bg-color-hover);
+ /* background-color:red; */
+
+ 
+
+}
+/*  تنسيق عناصر السوشيال في الهيدر */
+.main-header .container .header-flex  .social {
+    /* ضبط عناصر التواصل افقيا  */
+    display: flex;
+    /*  مع فراغات بينهن  */
+    justify-content: space-between;
+    padding-bottom: 10px;
+}  
+/*   اخفاء عناصر السوشيال في الهيدر  لحجم اصغر من 768بكسل*/
+@media (max-width:  768px) {
+.main-header .container .header-flex  .social {
+        /* اخفاء عناصر التواصل تحت  عرض 768 بكسل  */
+        display: none;
+      
+    }
+    .nav-links {
+       justify-content: start;
+      height: auto;
+      width: 100%;
+      flex-wrap: wrap;
+      background: transparent;
+      top:0;
+    }
+    .header-flex {
+      justify-content: start;
+      height: auto;
+      width: 100%;
+      flex-wrap: wrap;
+      background: transparent;
+      top:0;
+      
+    }
+    .container {
+      height: auto;
+      background: transparent;
+      flex-wrap: wrap;
+    }
+    .main-header {
+      justify-content: start;
+      align-items: start;
+      height: auto;
+         flex-wrap: wrap;
+         background: transparent;
+         z-index: -5;
+    }
+}
+/* تنسيق عناصر السوشيال في الهيدر */
+.main-header .container .header-flex  .social  i {
+    /* نضع مارجن 5 بكسل  */
+    margin:var(--main-margin-size);
+    font-size: 17px;
+/* لتوزيع العناصر  في قلب العنصر  */
+    display: flex;
+    width: 35px;
+    height: 35px;
+    /* ضبط العناصر افقي  */
+    justify-content: center;
+    /* لون الخلفية للايقونة  */
+    background-color:var(--main-icon-bg-color);
+    /* background-color:rgb(206, 19, 19); */
+    /* ضبط عمودي  */
+    align-items: center ;
+    /* تلوين الايقونة */
+    color: white;
+    /* تحويل المربع الى دائرة */
+    border-radius: 50%;
+    /* تحديد زمن انيميشين*/
+    transition: var(--main-tr-tim);
+    /* تحويل سهم الماوس الى يد */
+    cursor: pointer;
+   
+   
+}
+.container .social  i:hover {
+    /* عند اقتراب الماوس تصبح الارضية سوداء */
+    background-color: var(--main-icon-bg-color-hover);
+    /* background-color:red; */
+    /* ويكبر حجم الخط */
+    /* font-size: 19px; */
+    /* ويزيد حجم الايقونة 10% */
+    scale: 1.1;
+}
+
+ .nav-links-head ul  i:hover {
+    /* عند اقتراب الماوس تصبح الارضية سوداء */
+    background-color: var(--main-icon-bg-color-hover);
+    /* background-color:red; */
+    /* ويكبر حجم الخط */
+    /* font-size: 19px; */
+    /* ويزيد حجم الايقونة 10% */
+    scale: 1.1;
+}
+/*============================= end header style ==========================================*/
+
+/* =========================================================== */
+
+ /* .main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+  background: #1a202c;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}  */
+ /* تصفير القائمة */
+.main-header .container .nav-links-head ul {
+    list-style: none;
+}
+/* مقطع اللوغو  */
+.main-header .Logo-img {
+    margin-top: var(--main-margin-size);
+    border: 2px solid var(--main-border-color);
+    background-color: none;
+}
+/* ارضية الهيدر */
+.main-header .container {
+/* تعريف بادينغ للكونتينير يسار ويمين  */
+   /* padding-left: 15px;
+   padding-right: 15px; */
+   /* وضع العنصر في نصف  الشاشة  عن طريق margin:auto */
+margin-left: auto;
+margin-right: auto;
+margin-top:auto;
+position: relative;
+align-items: start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #1a202c;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+/* background-color: var(--main-txt-color) */
+
+}
+
+ .main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #4a4a58;
+  /* padding: 3px 0; */
+   /* لإزالة الاستدارة إذا أردت*/
+  /* border-radius: 0; */
+  /* box-shadow: 0 4px 20px rgba(0,0,0,0.1); */
+  position: relative;
+  background: #1a202c;  خلفية غامقة للقائمة
+  /* padding: 5px 0; */
+  /* border-radius: 16px 16px 0 0; */
+  margin-bottom: 10px;
+ } 
+
+
+
+.header-flex {
+top:0;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  /* padding: 0 2px; */
+}
+
+.logo-img {
+  width: 20px;
+  height: auto;
+}
+.main-header .container .header-flex .nav-links-head {
+  top:0;
+}
+/* تنسيق الروابط في القائمة الجديدة */
+.main-header .container .header-flex .nav-links-head ul li a {
+  color: rgb(29, 28, 28);
+  background-color:#87888a; ;
+  background: transparent;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+.main-header .container .header-flex .nav-links-head ul li a:hover {
+  background: #2b6cb0;
+  color: white;
+}
+   
+   /* ********************************************** */
+   
+ 
+
+.logo-img {
+  width: 70px;          /* أو حسب حجم الشعار */
+  height: auto;
+  background: transparent;
+  margin-bottom: 12px;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8fafc;
+      color: #1a202c;
+      line-height: 1.7;
+      padding: 20px;
+    }
+
+    .main-heade .container {
+      max-width: 1200px;
+      height: 60px;
+      margin: 0 auto;
+      background: white;
+      /* border-radius: 3px; */
+      /* padding: 15px 10px; */
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    }
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;   /* تجعل الصورة دائرية */
+  object-fit: cover;    /* تمنع تمدد الصورة */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+   
+
+    /* ===== إعادة تعيين عامة ===================== */
+   
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8fafc;
+      color: #1a202c;
+      line-height: 1.7;
+      padding: 20px;
+    }
+
+    .main-header .container {
+      max-width: 100%x;
+      margin: 0 auto;
+      background: white;
+      border-radius: 3px;
+      /* padding: 40px 30px; */
+      /* box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06); */
+    }
+
+    /* ===== الترويسة ===== */
+    .header {
+      text-align: center;
+      padding: 30px 20px 20px;
+      border-bottom: 2px solid #edf2f7;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2.6rem;
+      color: #1a202c;
+      margin-bottom: 6px;
+    }
+
+    .header .subtitle {
+      font-size: 1.2rem;
+      color: #2b6cb0;
+      font-weight: 600;
+    }
+
+    .header .bio {
+      max-width: 700px;
+      margin: 12px auto 0;
+      color: #4a5568;
+      font-size: 1rem;
+    }
+
+    /* ===== أزرار التنقل السريع ===== */
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      /* margin: 25px 0 10px; */
+    }
+
+    .nav-links ul li a {
+      background: #edf2f7;
+      color: #1a202c;
+      padding: 8px 22px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links ul li a:hover {
+      background: #2b6cb0;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* ===== إحصائيات سريعة ===== */
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px 50px;
+      background: #f0f4ff;
+      padding: 25px 20px;
+      border-radius: 20px;
+      margin: 30px 0 40px;
+      text-align: center;
+    }
+
+    .stat-item .number {
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #2b6cb0;
+      line-height: 1.2;
+    }
+
+    .stat-item .label {
+      font-size: 0.9rem;
+      color: #4a5568;
+    }
+
+    /* ===== العناوين العامة ===== */
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 50px 0 12px;
+      color: #1a202c;
+      border-right: 6px solid #2b6cb0;
+      padding-right: 16px;
+    }
+
+    .section-desc {
+      max-width: 750px;
+      margin-bottom: 30px;
+      color: #4a5568;
+    }
+
+    /* ===== شبكات البطاقات ===== */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 25px;
+      margin-top: 10px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 24px 22px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      border: 1px solid #edf2f7;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+      border-color: #bee3f8;
+    }
+
+    .card .icon {
+      font-size: 2.6rem;
+      margin-bottom: 6px;
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+      color: #1a202c;
+    }
+
+    .card p {
+      color: #4a5568;
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+    }
+
+    .card .btn-detail {
+      display: inline-block;
+      color: #2b6cb0;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: 0.2s;
+      font-size: 0.9rem;
+    }
+
+    .card .btn-detail:hover {
+      border-bottom-color: #2b6cb0;
+    }
+
+    /* ===== التفاصيل المخفية (تعمل مع :target) ===== */
+    .hidden-details {
+      display: none;
+      background: #f7fafc;
+      padding: 16px 20px;
+      border-radius: 14px;
+      margin-top: 14px;
+      font-size: 0.95rem;
+    }
+
+    .hidden-details ul {
+      padding-right: 20px;
+      margin: 6px 0;
+    }
+
+    .hidden-details li {
+      margin-bottom: 4px;
+    }
+
+    .card:target .hidden-details {
+      display: block;
+      animation: fadeSlide 0.4s ease;
+    }
+
+    @keyframes fadeSlide {
+      0% { opacity: 0; transform: translateY(-6px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== قسم المهارات ===== */
+    .skills-list {
+      max-width: 90%;
+      margin: 10px 0 20px;
+    }
+
+    .skill-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f7fafc;
+      padding: 5px 18px;
+      border-radius: 60px;
+      margin-bottom: 3px;
+    }
+
+    .skill-row .skill-icon { font-size: 1.6rem; width: 44px; }
+    .skill-row .skill-name { font-weight: 600; width: 110px; color: #1a202c; }
+
+    .progress {
+      flex: 1;
+      height: 15px;
+      background: #d9d1f0;
+      /* border-radius: 40px; */
+      overflow: hidden;
+    }
+
+    .progress span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, #2b6cb0, #667eea);
+      /* border-radius: 40px; */
+      font-size: 0;
+    }
+
+    /* ===== كروت الأقسام الخاصة (لون جانبي) ===== */
+    .card.industry { border-right: 5px solid #2b6cb0; }
+    .card.gov { border-right: 5px solid #38a169; }
+    .card.quality { border-right: 5px solid #d69e2e; }
+    .card.private { border-right: 5px solid #9f7aea; }
+
+    /* ====التذييل==== */
+    .footer {
+      margin-top: 60px;
+      text-align: center;
+      padding-top: 25px;
+      border-top: 2px solid #edf2f7;
+      color: #4a5568;
+      font-size: 0.95rem;
+    }
+
+    /* ===== تجاوب ===== */
+    @media (max-width: 600px) {
+      .container { padding: 10px 10px; }
+      .header h1 { font-size: 2rem; }
+      .stats { gap: 18px; }
+      .stat-item .number { font-size: 1.8rem; }
+      .card-grid { grid-template-columns: 1fr; }
+      .skill-row { flex-wrap: wrap; gap: 6px; }
+      .skill-row .skill-name { width: 100%; }
+    }
+    .btn-close {
+  display: inline-block;
+  margin-top: 15px;
+  background: #e53e3e;
+  color: white;
+  padding: 6px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-close:hover {
+  background: #c53030;
+  transform: scale(1.03);
+}
